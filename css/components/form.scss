@@ -1,0 +1,85 @@
+.form {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 19%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
+}
+
+.form__col {
+    flex: 1;
+    margin-right: rem(40px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: rem(18px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__block {
+    flex: 1;
+    margin-right: rem(20px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__input {
+    width: 100%;
+    padding: rem(18px) rem(11px); 
+    border: solid rem(3px) transparent;
+    border-radius: rem(4px);
+    box-sizing: border-box;
+
+    &--textarea {
+        height: rem(160px);
+        resize: none;
+        margin-bottom: rem(10px);
+
+        @include tablets {
+            height: rem(82px);
+        }
+    }
+
+    &:focus {
+        border-color: #CA1B36;
+        outline: none;
+    }
+}
+
+.form__controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(19px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.form__btns {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,8 @@
+.benefits-section {
+    position: relative;
+    background: url("/img/Vector.png") left 13% top 102% no-repeat;
+
+    @include phones {
+        background: none;
+    }
+}
