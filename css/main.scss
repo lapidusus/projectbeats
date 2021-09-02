@@ -29,7 +29,11 @@ $phones: 480px;
 @import "components/footer.scss";
 @import "components/contacts.scss";
 @import "components/social.scss";
-
+@import "components/shop-section.scss";
+@import "components/arrow.scss";
+@import "components/slider.scss";
+@import "components/slide.scss";
+@import "components/dropdown__menu.scss";
 
 html {
     font-size: $baseFontSize;
