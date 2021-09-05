@@ -1,7 +1,43 @@
 .dropdown__menu {
-    display: none;
     position: absolute;
     width: 273px;
     height: 294px;
     background: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    top: rem(0px);
+    right: 13%;
+    border-radius: 5px;
+    color: #000;
+}
+
+.dropdown__menu:hover {
+    left: rem(91px);
+    opacity: 1;
+}
+
+.dropdown__list {
+    padding: rem(30px) rem(25px);
+}
+
+.dropdown__item {
+    display: flex;
+    justify-content: space-between;
+    width: rem(220px);
+    margin-bottom: rem(24px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.dropdown__item-elem2 {
+    flex: 60%;
+    margin-left: rem(15px);
+}
+
+.dropdown__menu-icon {
+    height: rem(18px);
+    width: rem(22px);
 }

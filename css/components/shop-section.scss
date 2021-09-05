@@ -8,31 +8,61 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include phones {
+        padding: rem(20px) rem(0px);
+    }
 }
 
 .shop-section__img {
     margin-right: rem(60px);
+
+    @include tablets {
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-right: 0;
+    }
 }
 
 .shop-section__img .shop-section__pic {
     width: rem(452px);
     height: rem(452px);
+
+    @include tablets {
+        height: rem(306px);
+        width: rem(306px);
+        margin-bottom: rem(50px);
+    }
 }
 
 .shop-section__text {
-    max-width: 26.25rem;
+    max-width: rem(420px);
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .shop-section-settings {
     position: relative;
     margin-bottom: rem(25px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .shop-section__char {
     display: flex;
     margin-bottom: rem(30px);
+
+    @include tablets {
+        justify-content: space-between;
+    }
 }
 
 .shop-section__char-subtitle {
@@ -45,6 +75,10 @@
 
 .shop-section__desc {
     margin-bottom: rem(27px);
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .shop-section__desc-title {
@@ -53,18 +87,45 @@
     text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: rem(25px);
+
+    @include tablets {
+        font-size: rem(28px);
+    }
 }
 
 .shop-section__desc-subtitle {
     color: #666666;
     line-height: 1.2;
+
+    @include tablets {
+        margin-right: 0;
+        padding: 0;
+    }
 }
 
 .shop-section__char-elem1 {
     margin-right: rem(90px);
+
+    @include tablets {
+        padding-left: rem(120px);
+    }
+}
+
+.shop-section__char-elem2 {
+    margin-left: rem(86px);
+
+    @include tablets {
+        padding-right: rem(100px);
+        margin-left: 0;
+    }
 }
 
 .shop-section__price-elem {
     margin-right: rem(15px);
     font-size: rem(36px);
+
+    @include tablets {
+        padding-left: rem(50px);
+        margin-right: rem(35px);
+    }
 }

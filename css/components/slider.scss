@@ -1,5 +1,14 @@
 .slider {
     padding-left: rem(33px);
+    width: 100%;
+
+    @include tablets {
+        padding-left: 0;
+    }
+    
+    @include phones {
+        padding-left: 0;
+    }
 }
 
 .slick-slider {
@@ -28,10 +37,23 @@
 .slider__list {
     display: flex;
     position: relative;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .slider__item {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:last-child {
+        display: none;
+    }
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
