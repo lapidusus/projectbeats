@@ -16,6 +16,7 @@
 
 .shop-section__img {
     margin-right: rem(60px);
+    flex-shrink: 0;
 
     @include tablets {
         margin-right: 0;

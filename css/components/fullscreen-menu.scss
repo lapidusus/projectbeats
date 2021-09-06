@@ -40,6 +40,10 @@
 
 .fullscreen-menu__item {
     margin-bottom: rem(20px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .fullscreen-menu__link, .fullscreen-menu__close {
