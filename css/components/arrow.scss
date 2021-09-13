@@ -1,4 +1,5 @@
 .arrow {
+    position: absolute;
     top: 45%;
 
     @include tablets {
@@ -19,13 +20,13 @@
 }
 
 .arrow__right {
-    left: 0%;
+    left: 98%;
 
     @include tablets {
-        left: 15%;
+        left: 98%;
     }
 
     @include phones {
-        left: 0%;
+        left: 96%;
     }
 }

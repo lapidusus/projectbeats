@@ -1,6 +1,11 @@
 .slider {
-    padding-left: rem(33px);
     width: 100%;
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
 
     @include tablets {
         padding-left: 0;
@@ -48,9 +53,6 @@
     justify-content: center;
     align-items: center;
 
-    &:last-child {
-        display: none;
-    }
 
     @include tablets {
         flex-direction: column;
