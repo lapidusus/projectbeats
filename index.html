@@ -437,40 +437,64 @@
                     <div class="block1"></div>
                 </div>
             </section>
-            <section class="section">
-                <div class="container">
-                    <h2 class="section__title">отзывы</h2>
-                    <div class="reviews">
+            <section class="section reviews-section">
+                <div class="container reviews__container">
+                    <h2 class="section__title">Отзывы</h2>
+                    <div class="reviews reviews__container">
                         <div class="reviews__display">
-                            <div class="reviews__display-inner">
-                                <div class="reviews__avatar">
-                                    <img src="./img/Rectangle.png" alt="" class="reviews__avatar-img">
-                                </div>
-                                <article class="reviews__content">
-                                    <h3 class="reviews__title">Отличный звук</h3>
-                                    <div class="reviews__text">
-                                        <p>
-                                            Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. 
-                                        </p>
+                            <ul class="reviews__list">
+                                <li class="reviews__item reviews__item--active" data-linked-with="one">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/Rectangle.png" alt="photo" class="reviews__avatar-pic">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Отличный звук</h3>
+                                            <div class="reviews__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.</div>
+                                            <div class="reviews__author">Билли Айлиш</div>
+                                        </article>
                                     </div>
-                                    <div class="reviews__author">Билли Айлиш</div>
-                                </article>
-                            </div>
+                                </li>
+                                <li class="reviews__item" data-linked-with="two">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/man.png" alt="photo" class="reviews__avatar-pic">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Крутой дизайн</h3>
+                                            <div class="reviews__text">После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.</div>
+                                            <div class="reviews__author">Вадим Грачев</div>
+                                        </article>
+                                    </div>
+                                </li>
+                                <li class="reviews__item" data-linked-with="three">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/woman.png" alt="photo" class="reviews__avatar-pic">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">На долго хватает заряда</h3>
+                                            <div class="reviews__text">Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</div>
+                                            <div class="reviews__author">Мария Орлова</div>
+                                        </article>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="reviews__switcher">
-                            <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                                <a href="" class="interactive-avatar__link">
-                                    <img src="./img/Rectangle.png" alt="" class="interactive-avatar__img">
+                        <ul class="reviews-switcher">
+                            <li class="reviews-swithcer__item reviews-swithcer__item--active">
+                                <a href="#" class="reviews-switcher__link" data-open="one">
+                                    <img src="./img/Rectangle.png" alt="photo" class="reviews-swithcer__pic">
                                 </a>
                             </li>
-                            <li class="reviews__switcher-item interactive-avatar">
-                                <a href="" class="interactive-avatar__link">
-                                    <img src="./img/man.png" alt="" class="interactive-avatar__img">
+                            <li class="reviews-swithcer__item">
+                                <a href="#" class="reviews-switcher__link" data-open="two">
+                                    <img src="./img/man.png" alt="photo" class="reviews-swithcer__pic">
                                 </a>
                             </li>
-                            <li class="reviews__switcher-item interactive-avatar">
-                                <a href="" class="interactive-avatar__link">
-                                    <img src="./img/woman.png" alt="" class="interactive-avatar__img">
+                            <li class="reviews-swithcer__item">
+                                <a href="#" class="reviews-switcher__link" data-open="three">
+                                    <img src="./img/woman.png" alt="photo" class="reviews-swithcer__pic">
                                 </a>
                             </li>
                         </ul>
@@ -481,15 +505,16 @@
                 <div class="container">
                     <h2 class="section__title">закажите доставку</h2>
                     <form class="form">
+                        <input type="hidden" name="to" value="somewhere@mail.com">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="name">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="phone">
                                 </label>
                             </div>
                             <div class="form__row">
@@ -521,7 +546,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea class="form__input form__input--textarea" name="comment"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -601,7 +626,7 @@
                     Сообщение отправлено
                 </div>
                 <div class="modal__button-container">
-                    <a href="#" class="button button--modal--button">Закрыть</a>
+                    <a href="#" class="btn btn--theme--red">Закрыть</a>
                 </div>
             </div>
         </div>
@@ -614,5 +639,6 @@
     <script src="./fullscreen-menu.js"></script>
     <script src="./accord.js"></script>
     <script src="./modal.js"></script>
+    <script src="./tabs.js"></script>
 </body>
 </html>

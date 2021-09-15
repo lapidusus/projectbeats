@@ -1,7 +1,7 @@
 const validateFields = (form, fieldsArray) => {
 
     fieldsArray.forEach((field) => {
-        if (field.val().trim() == "") {
+        if (field.val() == "") {
         field.addClass("error");
     } else {
         field.removeClass("error");
