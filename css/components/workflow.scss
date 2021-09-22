@@ -1,0 +1,122 @@
+.workflow {
+    width: 100%;
+    height: 100%;
+    background-color: #F8FAF9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.container--workflow{
+    align-items: center;
+    position: relative;
+
+    @include tablets() {
+        height: 62%;
+    }
+}
+
+.player {
+    width: 100%;
+    overflow: hidden;
+
+    @include tablets() {
+        margin-top: 7%;
+        width: 100%; 
+    }
+}
+
+.player__video {
+    width:100%;
+}
+
+.player__controls {
+    display:flex;
+    align-items: center;
+    width:100%;
+    flex-wrap: wrap;
+    background: black;
+    position: absolute;
+    bottom:0;
+    justify-content: space-around;
+
+    height: rem(51px);
+
+    @include tablets() {
+        justify-content: left;
+    }
+
+    @include phones() {
+        height: rem(35px);
+    }
+}
+
+.player__button {
+    background: rgba(0,0,0,0);
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border: none;
+
+    @include phones() {
+        width: rem(35px);
+        height: rem(35px);
+    }
+
+    outline: none;
+}
+
+.play-pic, .volume-pic {
+    width: 11px;
+    height: 15px;
+}
+
+.progress {
+    position: relative;
+    display: flex;
+    flex-basis: 74%;
+
+    @include tablets() {
+        flex-basis: 49%;
+    }
+
+    @include phones() {
+        flex-basis: 83%;
+    }
+
+    height: 5px;
+    border-radius: 1px;
+    background: #333333;
+    cursor: pointer;
+}
+
+.progress__filled {
+    z-index: 150;
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    position: absolute;
+    left:0;
+    transform: translateY(37%); 
+    bottom: 0;
+    background: red;
+}
+
+.player__volume {
+    margin-left: auto;
+    display: flex;
+
+    @include phones(){
+        display: none;
+    }
+}
+
+
+.player__slider {
+    color: red;
+    height:inherit;
+}

@@ -437,6 +437,46 @@
                     <div class="block1"></div>
                 </div>
             </section>
+            <section class="section products-menu-section">
+                <div class="container products-menu-container">
+                    <h1 class="section__title products-menu-section__title">цвета</h1>
+                    <ul class="products-menu">
+                        <li class="products-menu__item">
+                            <a href="" class="products-menu__title">
+                                <div class="products-menu__text">«Атласное серебро»</div>
+                            </a>
+                            <div class="products-menu__content">
+                                <div class="products-menu__container">
+                                    <button class="products-menu__close" type="button"></button>
+                                    <div class="products-menu__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-menu__item">
+                            <a href="" class="products-menu__title">
+                                <div class="products-menu__text">«Чёрный матовый»</div>
+                            </a>
+                            <div class="products-menu__content">
+                                <div class="products-menu__container">
+                                    <button class="products-menu__close" type="button"></button>
+                                    <div class="products-menu__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-menu__item">
+                            <a href="" class="products-menu__title">
+                                <div class="products-menu__text">«Красный цитрус»</div>
+                            </a>
+                            <div class="products-menu__content">
+                                <div class="products-menu__container">
+                                    <button class="products-menu__close" type="button"></button>
+                                    <div class="products-menu__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <section class="section reviews-section">
                 <div class="container reviews__container">
                     <h2 class="section__title">Отзывы</h2>
@@ -499,6 +539,28 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </section>
+            <section class="section workflow">
+                <div class="container container--workflow">
+                    <h1 class="section__title">КАК МЫ РАБОТАЕМ</h2>
+                    <div class="player">
+                        <div id="yt-player" class="player__video viewer"></div>
+                        <div class="player__controls">
+                            <button class="player__button toggle" title="Toggle Play">
+                                <img src="./img/play.png" class="play-pic" alt="">
+                            </button>
+                            <div class="progress">
+                                <button class="progress__filled"></button>
+                            </div>
+                            <div class="player__volume">
+                                <button class="player__button mute" title="Toggle Mute">
+                                    <img src="./img/volume2.png" class="volume-pic" alt="">
+                                </button>
+                                <input  type="range" name="volume" class="player__slider" min=0 max="100" step="5" value="100">
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </section>
             <section class="section order-section section--font-color-white">
@@ -577,7 +639,7 @@
                 </div>
             </section>
             <section class="section map__section">
-                <img src="./img/map.png" alt="map-img" class="map">
+                <div class="ymap" id="map"></div>
                 <footer class="footer">
                     <div class="container footer__container">
                         <address class="contacts">
@@ -635,10 +697,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="./map.js"></script>
+    <script src="./player.js"></script>
     <script src="./slider.js"></script>
     <script src="./fullscreen-menu.js"></script>
     <script src="./accord.js"></script>
     <script src="./modal.js"></script>
     <script src="./tabs.js"></script>
+    <script src="./products.js"></script>
 </body>
 </html>

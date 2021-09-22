@@ -41,6 +41,10 @@
     text-decoration: none;
     color: #292929;
     font-size: rem(18px);
+
+    &:hover {
+        color: red;
+    }
 }
 
 .phone-number.header__phone-number {
