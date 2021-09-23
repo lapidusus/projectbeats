@@ -1655,8 +1655,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 74%;
-      flex-basis: 74%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
   height: 5px;
   border-radius: 1px;
   background: #333333;
@@ -1689,7 +1689,6 @@
 }
 
 .player__volume {
-  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1706,12 +1705,15 @@
 }
 
 .products-menu-section {
-  background: url(../img/menu.png) center center/cover no-repeat;
+  background-color: #999;
   position: relative;
   color: #fff;
 }
 
 .products-menu-section__title {
+  position: relative;
+  top: -130%;
+  text-align: left;
   font-weight: bold;
   font-size: 48px;
   color: #fff;
@@ -1719,8 +1721,8 @@
 
 .products-menu {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -208px;
+  top: -245px;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1728,18 +1730,38 @@
 }
 
 .products-menu__item {
+  height: 650px;
+  left: 794px;
+  top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.products-menu__title {
-  width: 100px;
+.products-menu__title1 {
+  background-color: #808080;
+  text-decoration: none;
+  width: 6.25rem;
+  position: relative;
+}
+
+.products-menu__title2 {
+  background-color: #151515;
+  text-decoration: none;
+  width: 6.25rem;
+  position: relative;
+}
+
+.products-menu__title3 {
+  background-color: #E01F3C;
+  text-decoration: none;
+  width: 6.25rem;
   position: relative;
 }
 
 .products-menu__text {
-  text-decoration: none;
+  padding: 1.875rem;
+  margin: 0;
   color: #fff;
   font-weight: bold;
   font-size: 36px;
@@ -1796,13 +1818,17 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .maincontent {
   height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {

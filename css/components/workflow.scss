@@ -78,7 +78,7 @@
 .progress {
     position: relative;
     display: flex;
-    flex-basis: 74%;
+    flex-basis: 65%;
 
     @include tablets() {
         flex-basis: 49%;
@@ -107,7 +107,7 @@
 }
 
 .player__volume {
-    margin-left: auto;
+    //margin-left: auto;
     display: flex;
 
     @include phones(){

@@ -1,14 +1,14 @@
 const mesureWidth = () => {
     return 500;
-}
+};
 
 const closeEveryItemInContainer = (container) => {
     const items = container.find(".products-menu__item");
     const content = container.find(".products-menu__content");
 
-    items.removeCLass("active");
+    items.removeClass("active");
     content.width(0);
-}
+};
 
 const openItem = (item) => {
     const hiddenContent = item.find(".products-menu__content");
@@ -16,9 +16,9 @@ const openItem = (item) => {
 
     item.addClass("active");
     hiddenContent.width(reqWidth); 
-}
+};
 
-$(".products-menu__title").on("click", (e) => {
+$(".products-menu__title1, .products-menu__title2, .products-menu__title3").on("click", (e) => {
     e.preventDefault();
 
     const $this = $(e.currentTarget);
@@ -29,6 +29,14 @@ $(".products-menu__title").on("click", (e) => {
     if (itemOpened) {
         closeEveryItemInContainer(container)
     } else {
-        openItem(item); 
+        closeEveryItemInContainer(container)
+        openItem(item);     
     }
 });
+
+
+$(".products-menu__close").on("click", e => {
+    e.preventDefault();
+
+    closeEveryItemInContainer($('.products-menu'));
+})
